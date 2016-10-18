@@ -5,6 +5,11 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="Xamarin06_Sam.Views.MainPage"
              Title="MainPage">
+<ContentPage.ToolbarItems>
+	<ToolbarItem Text="OK" Clicked="ToolbarItem_Clicked"></ToolbarItem>
+	<ToolbarItem Text="取消" Command="{Binding 取消Command}"></ToolbarItem>
+	<ToolbarItem Text="Other" Command="{Binding OtherCommand}" Order="Secondary"></ToolbarItem>
+</ContentPage.ToolbarItems>
   <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
     <Label Text="{Binding Title}" />
   </StackLayout>

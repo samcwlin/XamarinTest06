@@ -16,9 +16,24 @@ namespace Xamarin06_Sam.ViewModels
 			set { SetProperty(ref _title, value); }
 		}
 
+		public DelegateCommand 取消Command { get; private set; }
+
+		public DelegateCommand OtherCommand { get; private set; } 
+
 		public MainPageViewModel()
 		{
+			取消Command = new DelegateCommand(() =>
+				{
+					Title = "取消";
+				}
+			);
 
+
+			OtherCommand = new DelegateCommand(() =>
+			{
+				Title = "Other";
+			}
+			);
 		}
 
 		public void OnNavigatedFrom(NavigationParameters parameters)

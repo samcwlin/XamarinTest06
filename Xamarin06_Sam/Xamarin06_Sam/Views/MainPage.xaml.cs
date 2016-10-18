@@ -1,4 +1,6 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
+using Xamarin06_Sam.ViewModels;
 
 namespace Xamarin06_Sam.Views
 {
@@ -7,6 +9,12 @@ namespace Xamarin06_Sam.Views
 		public MainPage()
 		{
 			InitializeComponent();
+		}
+
+		private void ToolbarItem_Clicked(object sender, EventArgs e)
+		{
+			MainPageViewModel foo = this.BindingContext as MainPageViewModel;
+			foo.Title = "OK";
 		}
 	}
 }
