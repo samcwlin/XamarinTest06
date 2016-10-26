@@ -3,7 +3,9 @@ using Prism.Mvvm;
 using Prism.Navigation;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
+using Xamarin.Forms;
 
 namespace Xamarin06_Sam.ViewModels
 {
@@ -16,6 +18,15 @@ namespace Xamarin06_Sam.ViewModels
 			set { SetProperty(ref _title, value); }
 		}
 
+		private string _image;
+		public string Image
+		{
+			get { return _title; }
+			set { SetProperty(ref _title, value); }
+		}
+
+
+
 		public DelegateCommand 取消Command { get; private set; }
 
 		public DelegateCommand OtherCommand { get; private set; } 
@@ -24,14 +35,16 @@ namespace Xamarin06_Sam.ViewModels
 		{
 			取消Command = new DelegateCommand(() =>
 				{
-					Title = "取消";
+//					Title = "取消";
+					Image = "Cancel.png";
 				}
 			);
 
 
 			OtherCommand = new DelegateCommand(() =>
 			{
-				Title = "Other";
+//				Title = "Other.png";
+				Image = "Other.png";
 			}
 			);
 		}

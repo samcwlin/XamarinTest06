@@ -152,6 +152,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\AndroidManifest.xml" />
+    <AndroidResource Include="Resources\drawable\Cancel.png" />
+    <AndroidResource Include="Resources\drawable\OK.png" />
+    <AndroidResource Include="Resources\drawable\Other.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Xamarin06_Sam\Xamarin06_Sam.csproj">

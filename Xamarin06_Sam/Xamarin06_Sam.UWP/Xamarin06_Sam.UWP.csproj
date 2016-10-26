@@ -108,6 +108,9 @@
     <None Include="Xamarin06_Sam.UWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Cancel.png" />
+    <Content Include="Assets\OK.png" />
+    <Content Include="Assets\Other.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

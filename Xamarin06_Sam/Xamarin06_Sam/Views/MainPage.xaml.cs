@@ -14,7 +14,8 @@ namespace Xamarin06_Sam.Views
 		private void ToolbarItem_Clicked(object sender, EventArgs e)
 		{
 			MainPageViewModel foo = this.BindingContext as MainPageViewModel;
-			foo.Title = "OK";
+//			foo.Title = "OK";
+			foo.Image = "OK.png";
 		}
 	}
 }
